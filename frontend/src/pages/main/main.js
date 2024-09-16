@@ -48,10 +48,10 @@ const MainContainer = ({ className, ...props }) => {
 		if (userId) {
 			dispatch(loadCartAsync(userId));
 		}
+		// eslint-disable-next-line
 	}, [
 		page,
 		shouldSearch,
-		searchPhrase,
 		sortDirection,
 		userId,
 		props.category,
